@@ -330,21 +330,10 @@ ul {
   color: var(--forest);
 }
 
-.brand-mark {
+.brand-logo {
   flex: none;
-  width: 2.4rem;
-  height: 2.4rem;
-  display: grid;
-  place-items: center;
-  border: 1.5px solid var(--sage);
-  border-radius: 50%;
-  color: var(--olive-deep);
-  background: var(--ivory);
-}
-
-.brand-mark svg {
-  width: 1.3rem;
-  height: 1.3rem;
+  height: 3rem;
+  width: auto;
 }
 
 .brand-text {
@@ -506,8 +495,8 @@ ul {
     gap: 0.6rem;
   }
 
-  .brand-mark {
-    display: none;
+  .brand-logo {
+    height: 2.6rem;
   }
 
   .brand-name {
@@ -827,50 +816,93 @@ a.card:hover .card-more {
 
 /* ---- Team ------------------------------------------------------------------- */
 
-.team-grid {
+.team-list {
   display: grid;
   gap: var(--sp-3);
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  max-width: 58rem;
+  max-width: 60rem;
   margin-inline: auto;
 }
 
-.team-card {
+.person {
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: start;
   background: var(--ivory);
   border: 1px solid var(--sage-25);
   border-radius: var(--radius);
-  overflow: hidden;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
   box-shadow: var(--shadow-soft);
-  text-align: center;
 }
 
-.team-card .media-frame {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 1px solid var(--sage-25);
+.section--ivory .person {
+  background: var(--cream);
 }
 
-.team-card-body {
-  padding: var(--sp-3);
+.person-photo {
+  width: 13rem;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--sage-25);
+  box-shadow: var(--shadow-soft);
+  background: var(--ivory);
 }
 
-.team-card h3 {
-  margin-bottom: 0.2rem;
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.team-role {
+.person h3 {
+  margin-bottom: 0.1rem;
+}
+
+.person-role {
+  display: block;
   font-family: var(--font-eyebrow);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--olive-deep);
-  margin-bottom: 0.6rem;
+  margin-bottom: var(--sp-2);
 }
 
-.team-card p {
+.person-focus {
   font-size: var(--fs-small);
-  margin-bottom: 0;
+}
+
+.person-focus strong {
+  color: var(--forest);
+}
+
+.person-quote {
+  border-left: 3px solid var(--brass);
+  padding: 0.15rem 0 0.15rem var(--sp-2);
+  margin: var(--sp-2) 0 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--olive-deep);
+}
+
+.person .placeholder-tag {
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 40em) {
+  .person {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .person-quote {
+    text-align: left;
+  }
 }
 
 /* ---- Gallery ------------------------------------------------------------------ */

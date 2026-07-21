@@ -21,11 +21,8 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <!-- CLIENT-INPUT: logo — replace this text wordmark with the supplied logo file (assets/images/logo.svg). See IMAGE_GUIDE.md, item 1, for a ready-to-paste snippet. -->
       <a class="brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 21c0-8 2-14 8-18 1 7-2 15-8 18z" fill="currentColor" opacity=".85"/><path d="M12 21c0-6-1.5-10-6-13-.8 6 1.5 11 6 13z" fill="currentColor" opacity=".5"/></svg>
-        </span>
+        <img class="brand-logo" src="assets/images/logo-mark.png" alt="" width="211" height="200">
         <span class="brand-text">
           <span class="brand-name">Compassionate</span>
           <span class="brand-sub">Care Management, LLC</span>
@@ -74,15 +71,14 @@
     <!-- Image grid -->
     <section class="section section--ivory" aria-label="Photo gallery">
       <div class="container">
-        <!-- CLIENT-INPUT: gallery-photos — real photos. These clearly-labeled placeholder tiles are NOT stock
-             images; drop real photos in as assets/images/gallery-1.jpg … gallery-6.jpg (1200×900) and they
-             appear automatically. Add or remove tiles as needed. -->
+        <!-- To add or change photos: drop a 1200×900 JPG in as assets/images/gallery-N.jpg and
+             update its caption + alt text below. Duplicate a tile to add more. -->
         <div class="gallery-grid">
           <button class="gallery-item reveal" type="button">
             <span class="media-frame media-frame--landscape">
               <img src="assets/images/gallery-1.jpg"
                    onerror="this.onerror=null;this.src='assets/images/gallery-1.svg'"
-                   alt="Placeholder for a photo of the team" width="1200" height="900">
+                   alt="The Compassionate Care Management team of three care professionals" width="1200" height="900">
             </span>
             <span class="gallery-caption">Our team</span>
           </button>
@@ -90,48 +86,28 @@
             <span class="media-frame media-frame--landscape">
               <img src="assets/images/gallery-2.jpg"
                    onerror="this.onerror=null;this.src='assets/images/gallery-2.svg'"
-                   alt="Placeholder for a photo of care in action" width="1200" height="900">
+                   alt="A care professional reviewing medications with an older patient at home" width="1200" height="900">
             </span>
-            <span class="gallery-caption">Care in action</span>
+            <span class="gallery-caption">Chronic care management</span>
           </button>
           <button class="gallery-item reveal" type="button">
             <span class="media-frame media-frame--landscape">
               <img src="assets/images/gallery-3.jpg"
                    onerror="this.onerror=null;this.src='assets/images/gallery-3.svg'"
-                   alt="Placeholder for a photo of the workspace or care setting" width="1200" height="900">
+                   alt="A caregiver holding the hand of an older patient resting in bed" width="1200" height="900">
             </span>
-            <span class="gallery-caption">Workspace &amp; setting</span>
+            <span class="gallery-caption">Palliative care</span>
           </button>
           <button class="gallery-item reveal" type="button">
             <span class="media-frame media-frame--landscape">
               <img src="assets/images/gallery-4.jpg"
                    onerror="this.onerror=null;this.src='assets/images/gallery-4.svg'"
-                   alt="Placeholder for a photo of community involvement or partner facilities" width="1200" height="900">
+                   alt="A care professional supporting an older patient at home on the sofa" width="1200" height="900">
             </span>
-            <span class="gallery-caption">Community &amp; partners</span>
-          </button>
-          <button class="gallery-item reveal" type="button">
-            <span class="media-frame media-frame--landscape">
-              <img src="assets/images/gallery-5.jpg"
-                   onerror="this.onerror=null;this.src='assets/images/gallery-5.svg'"
-                   alt="Placeholder for brand or logo graphics" width="1200" height="900">
-            </span>
-            <span class="gallery-caption">Brand graphics</span>
-          </button>
-          <button class="gallery-item reveal" type="button">
-            <span class="media-frame media-frame--landscape">
-              <img src="assets/images/gallery-6.jpg"
-                   onerror="this.onerror=null;this.src='assets/images/gallery-6.svg'"
-                   alt="Placeholder for an additional photo" width="1200" height="900">
-            </span>
-            <span class="gallery-caption">Additional photo</span>
+            <span class="gallery-caption">Home care management</span>
           </button>
         </div>
 
-        <div class="privacy-note">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
-          <p><strong>A note on privacy:</strong> any photo showing a patient requires their permission before it is published.</p>
-        </div>
       </div>
     </section>
 

@@ -52,22 +52,25 @@ Until connected, submitting the form shows a clear "not connected yet — please
 
 ## Client-input placeholders
 
-Every item awaiting client content is rendered as a clean, visibly-labeled placeholder (dashed border + "Client input needed" tag) and marked in the source with a `<!-- CLIENT-INPUT: ... -->` comment. Search the project for `CLIENT-INPUT` to find them all.
+Items awaiting client content are rendered as clean, visibly-labeled placeholders (dashed border + "Client input needed" tag) and marked in the source with a `<!-- CLIENT-INPUT: ... -->` comment. Search the project for `CLIENT-INPUT` to find the remaining ones.
 
-| # | Item | Where | How to swap |
+**Updated 21 Jul 2026** with the client's first feedback round — team bios + photos, the founder's story, and real care photos are now live. The `✅` rows below are done; the rest are still open.
+
+| # | Item | Status | Where / how to finish |
 |---|---|---|---|
-| 1 | **Logo** | Header + footer of every page (currently a text wordmark) | See [IMAGE_GUIDE.md](IMAGE_GUIDE.md) item 1 |
-| 2 | **Business hours** | Footer of every page + Contact page details | Replace the `footer-placeholder` block / Contact hours placeholder with the confirmed hours |
-| 3 | **Team members** | `team.html` — 3 repeatable placeholder cards | Fill in name, role, bio per card; duplicate/delete cards as needed; photos per IMAGE_GUIDE items 5–7. If the client prefers not to list individuals, replace the grid with a single "Our Approach" statement |
-| 4 | **Gallery photos** | `gallery.html` — 6 labeled placeholder tiles | Drop real photos in per IMAGE_GUIDE items 8–13; add/remove tiles as needed |
-| 5 | **Hero image** | `index.html` hero | IMAGE_GUIDE item 3 |
-| 6 | **About intro image** | `about.html` intro | IMAGE_GUIDE item 4 |
-| 7 | **Home Care wording** | `services.html`, service 3 | Description is our draft (service wasn't on the original card); client may reword |
-| 8 | **Founder's note (optional)** | `about.html`, end of Values section | Replace the placeholder block with the note, or delete the block |
-| 9 | **Privacy Policy final copy** | `privacy.html` | Replace the standard placeholder statement with client-approved legal copy before launch; then remove the `noindex` meta tag |
-| 10 | **OG share image** | `<meta property="og:image">` on every page | IMAGE_GUIDE item 14 |
-| 11 | **WhatsApp button (open question)** | Not built | The content doc says to confirm with the client first. If wanted, add a second button beside the header call button |
-| 12 | **Favicon** | `assets/favicon.svg` (placeholder leaf mark) | IMAGE_GUIDE item 2 |
+| 1 | **Logo** | ✅ Done | Client's transparent logo icon is now in every header, paired with the text wordmark. Full lockup kept in `logo/`. Site keeps the green scheme for now per the client's note — see [IMAGE_GUIDE.md](IMAGE_GUIDE.md) "Current status" |
+| 2 | **Business hours** | ❌ Open | Footer of every page + Contact page — replace the hours placeholder with confirmed hours |
+| 3 | **Team members** | ✅ Done | `team.html` now shows Lisa Annamaria Fuentes, the FNP partner, and Chinasa Chudi-Attah with real bios + photos. **One gap:** the FNP partner's name is a "Name to confirm" placeholder (see #13) |
+| 4 | **Gallery photos** | ✅ Done | `gallery.html` shows 4 real photos (team, chronic, palliative, home care) |
+| 5 | **Hero image** | ✅ Done | `index.html` uses the client's home-care photo |
+| 6 | **About intro image** | ✅ Done | `about.html` uses the team group photo |
+| 7 | **Home Care wording** | ❌ Open | `services.html`, service 3 — our draft; client may reword |
+| 8 | **Founder's story** | ✅ Done | Added as the "Our Story" section on `about.html` from the client's text |
+| 9 | **Privacy Policy final copy** | ❌ Open | `privacy.html` — replace placeholder legal copy before launch, then remove the `noindex` meta tag |
+| 10 | **OG share image** | ❌ Open | `<meta property="og:image">` on every page — IMAGE_GUIDE item 14 |
+| 11 | **WhatsApp button** | ❔ Open question | Not built; the content doc says to confirm with the client first |
+| 12 | **Favicon** | ❌ Open | `assets/favicon.svg` (placeholder leaf mark) — IMAGE_GUIDE item 2 |
+| 13 | **Team member 2 name** | ⚠️ Confirm | `team.html` — coat appears to read "Rajai Rex, MSN/FNP"; shown as "Name to confirm" until the client verifies exact spelling |
 
 ## Image replacement
 
@@ -88,7 +91,12 @@ See **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** — it lists every image the site uses 
 ├── css/styles.css        design tokens + all components
 ├── js/main.js            mobile nav, form, reveals, lightbox
 ├── assets/favicon.svg
-├── assets/images/        placeholder images (replace per IMAGE_GUIDE.md)
+├── assets/images/        live + placeholder images (see IMAGE_GUIDE.md)
+├── logo/                 master logo lockup from the client
+├── source-photos/        client's original full-res photos (git-ignored; kept for re-cropping)
+├── .gitignore
 ├── README.md
 └── IMAGE_GUIDE.md
 ```
+
+> **Note:** site images in `assets/images/` were cropped to their exact slot sizes from the originals in `source-photos/`. That folder is git-ignored so the large originals don't deploy; keep it locally if you may need to re-crop.

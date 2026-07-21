@@ -13,21 +13,37 @@ General rules for all photos:
 
 ---
 
+## Current status (client photos received 21 Jul 2026)
+
+The client sent real photos, which are now live on the site (cropped to the exact slot sizes below from the originals in the `Feedback/` folder):
+
+| Slot | Now showing | Source in `Feedback/` |
+|---|---|---|
+| Home hero | Home-care scene | `9. This reflects Home Care Management.jpeg` |
+| About intro | Team group photo | `4. …profession group photo…` |
+| Team headshots 1–3 | Lisa, FNP partner, Chinasa | `1. Headshot`, `2. Image`, `3. Chinasa…` |
+| Gallery 1–4 | Team, chronic, palliative, home | images 4, 5, 6, 9 |
+
+**Logo — now placed.** The client supplied a transparent PNG (teal + gold heart-in-hands mark with the "Compassionate Care Management" wordmark). Because it's a tall vertical lockup, the *icon* was cropped out (`assets/images/logo-mark.png`) and paired with the site's text wordmark in the header — legible at nav size and unmodified in color. The full lockup is kept in the `logo/` folder. The header now mixes the logo's teal with the site's forest-green wordmark; per the client's note we're keeping the green scheme for now, but if they'd prefer a fully teal/gold identity that's a quick follow-up. See item 1.
+
+**Still needed / decisions open:**
+
+- **Team member 2 name** — the client did not send this partner's name in writing. Her coat appears to read "Rajai Rex, MSN/FNP" but the spelling isn't certain, so the card shows a "Name to confirm" tag. Send the exact name and it drops straight in.
+- **Business hours**, **favicon**, and **social share image** — still placeholders (items 2, 14, and the footer hours block).
+
+Everything below is the full reference for swapping any image later.
+
+---
+
 ## 1. Logo (header + footer wordmark)
 
 | | |
 |---|---|
-| **What / where** | Company logo, top-left header and footer of **every page** (currently a text wordmark with a small leaf mark) |
-| **Drop-in path** | `assets/images/logo.svg` (preferred) or `logo.png` |
-| **Dimensions** | SVG any size; PNG ≥ 640 × 160 px (2×), roughly **4:1 landscape** |
-| **Format / max size** | SVG ≤ 50 KB, or transparent PNG ≤ 50 KB |
-| **Framing notes** | Horizontal lockup on a transparent background; must stay legible at 40 px tall. Dark-green/full-color version (headers are cream). If a cream/white version exists, it can also replace the footer wordmark. |
-
-**To swap:** in each of the 7 HTML files, find the `<!-- CLIENT-INPUT: logo -->` comment and replace the `<a class="brand">…</a>` element's contents with:
-
-```html
-<img src="assets/images/logo.svg" alt="Compassionate Care Management, LLC — home" width="320" height="80" style="height:3rem;width:auto;">
-```
+| **What / where** | Company logo icon, top-left header of **every page** (now `assets/images/logo-mark.png`, paired with the text wordmark). The footer keeps a cream text wordmark. |
+| **Current file** | `assets/images/logo-mark.png` (the icon, cropped from the client's full lockup; 211 × 200, transparent). Full lockup: `logo/…compassion.png`. |
+| **To replace the icon** | Overwrite `assets/images/logo-mark.png` with a new transparent PNG/SVG of the mark, ~1:1, ≤ 60 KB, legible at ~48 px. No HTML change needed. |
+| **To use the full lockup instead** | In each of the 7 HTML files, replace the `<img class="brand-logo">` and the adjacent `<span class="brand-text">…</span>` inside `<a class="brand">` with a single `<img>` of the full lockup — but note the tall lockup reads small in a horizontal nav (that's why the icon-plus-wordmark treatment is used). |
+| **Footer logo** | The footer sits on dark forest green, so a dark logo won't show. To add a logo there, supply a white/mono version and swap the footer `.brand-text`. |
 
 ## 2. Favicon (browser-tab icon)
 

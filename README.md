@@ -58,9 +58,9 @@ Items awaiting client content are rendered as clean, visibly-labeled placeholder
 
 | # | Item | Status | Where / how to finish |
 |---|---|---|---|
-| 1 | **Logo** | ✅ Done | Client's transparent logo icon is now in every header, paired with the text wordmark. Full lockup kept in `logo/`. Site keeps the green scheme for now per the client's note — see [IMAGE_GUIDE.md](IMAGE_GUIDE.md) "Current status" |
+| 1 | **Logo** | ✅ Done | Client's transparent logo icon is now in every header, paired with the text wordmark. Site keeps the green scheme for now per the client's note — see [IMAGE_GUIDE.md](IMAGE_GUIDE.md) "Current status" |
 | 2 | **Business hours** | ❌ Open | Footer of every page + Contact page — replace the hours placeholder with confirmed hours |
-| 3 | **Team members** | ✅ Done | `team.html` now shows Lisa Annamaria Fuentes, the FNP partner, and Chinasa Chudi-Attah with real bios + photos. **One gap:** the FNP partner's name is a "Name to confirm" placeholder (see #13) |
+| 3 | **Team members** | ✅ Done | `team.html` shows Lisa Annamaria Fuentes, Rajni Roy, and Chinasa Chudi-Attah with real bios + photos |
 | 4 | **Gallery photos** | ✅ Done | `gallery.html` shows 4 real photos (team, chronic, palliative, home care) |
 | 5 | **Hero image** | ✅ Done | `index.html` uses the client's home-care photo |
 | 6 | **About intro image** | ✅ Done | `about.html` uses the team group photo |
@@ -70,7 +70,7 @@ Items awaiting client content are rendered as clean, visibly-labeled placeholder
 | 10 | **OG share image** | ❌ Open | `<meta property="og:image">` on every page — IMAGE_GUIDE item 14 |
 | 11 | **WhatsApp button** | ❔ Open question | Not built; the content doc says to confirm with the client first |
 | 12 | **Favicon** | ❌ Open | `assets/favicon.svg` (placeholder leaf mark) — IMAGE_GUIDE item 2 |
-| 13 | **Team member 2 name** | ⚠️ Confirm | `team.html` — coat appears to read "Rajai Rex, MSN/FNP"; shown as "Name to confirm" until the client verifies exact spelling |
+| 13 | **Team member 2 name** | ✅ Done | Confirmed as Rajni Roy, FNP |
 
 ## Image replacement
 
@@ -92,11 +92,9 @@ See **[IMAGE_GUIDE.md](IMAGE_GUIDE.md)** — it lists every image the site uses 
 ├── js/main.js            mobile nav, form, reveals, lightbox
 ├── assets/favicon.svg
 ├── assets/images/        live + placeholder images (see IMAGE_GUIDE.md)
-├── logo/                 master logo lockup from the client
-├── source-photos/        client's original full-res photos (git-ignored; kept for re-cropping)
 ├── .gitignore
 ├── README.md
 └── IMAGE_GUIDE.md
 ```
 
-> **Note:** site images in `assets/images/` were cropped to their exact slot sizes from the originals in `source-photos/`. That folder is git-ignored so the large originals don't deploy; keep it locally if you may need to re-crop.
+> **Note:** the live site images in `assets/images/` were cropped to their exact slot sizes from the client's original full-res photos. The client keeps those originals separately (outside the repo); ask them if a different crop is ever needed.

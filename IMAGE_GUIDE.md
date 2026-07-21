@@ -24,11 +24,10 @@ The client sent real photos, which are now live on the site (cropped to the exac
 | Team headshots 1–3 | Lisa, FNP partner, Chinasa | `1. Headshot`, `2. Image`, `3. Chinasa…` |
 | Gallery 1–4 | Team, chronic, palliative, home | images 4, 5, 6, 9 |
 
-**Logo — now placed.** The client supplied a transparent PNG (teal + gold heart-in-hands mark with the "Compassionate Care Management" wordmark). Because it's a tall vertical lockup, the *icon* was cropped out (`assets/images/logo-mark.png`) and paired with the site's text wordmark in the header — legible at nav size and unmodified in color. The full lockup is kept in the `logo/` folder. The header now mixes the logo's teal with the site's forest-green wordmark; per the client's note we're keeping the green scheme for now, but if they'd prefer a fully teal/gold identity that's a quick follow-up. See item 1.
+**Logo — now placed.** The client supplied a transparent PNG (teal + gold heart-in-hands mark with the "Compassionate Care Management" wordmark). Because it's a tall vertical lockup, the *icon* was cropped out (`assets/images/logo-mark.png`) and paired with the site's text wordmark in the header — legible at nav size and unmodified in color. (The original full-lockup file is kept separately by the client, outside the repo.) The header now mixes the logo's teal with the site's forest-green wordmark; per the client's note we're keeping the green scheme for now, but if they'd prefer a fully teal/gold identity that's a quick follow-up. See item 1.
 
 **Still needed / decisions open:**
 
-- **Team member 2 name** — the client did not send this partner's name in writing. Her coat appears to read "Rajai Rex, MSN/FNP" but the spelling isn't certain, so the card shows a "Name to confirm" tag. Send the exact name and it drops straight in.
 - **Business hours**, **favicon**, and **social share image** — still placeholders (items 2, 14, and the footer hours block).
 
 Everything below is the full reference for swapping any image later.
@@ -40,7 +39,7 @@ Everything below is the full reference for swapping any image later.
 | | |
 |---|---|
 | **What / where** | Company logo icon, top-left header of **every page** (now `assets/images/logo-mark.png`, paired with the text wordmark). The footer keeps a cream text wordmark. |
-| **Current file** | `assets/images/logo-mark.png` (the icon, cropped from the client's full lockup; 211 × 200, transparent). Full lockup: `logo/…compassion.png`. |
+| **Current file** | `assets/images/logo-mark.png` (the icon, cropped from the client's full lockup; 211 × 200, transparent). The client keeps the full lockup separately, outside the repo. |
 | **To replace the icon** | Overwrite `assets/images/logo-mark.png` with a new transparent PNG/SVG of the mark, ~1:1, ≤ 60 KB, legible at ~48 px. No HTML change needed. |
 | **To use the full lockup instead** | In each of the 7 HTML files, replace the `<img class="brand-logo">` and the adjacent `<span class="brand-text">…</span>` inside `<a class="brand">` with a single `<img>` of the full lockup — but note the tall lockup reads small in a horizontal nav (that's why the icon-plus-wordmark treatment is used). |
 | **Footer logo** | The footer sits on dark forest green, so a dark logo won't show. To add a logo there, supply a white/mono version and swap the footer `.brand-text`. |

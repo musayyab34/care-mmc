@@ -28,7 +28,7 @@ The client sent real photos, which are now live on the site (cropped to the exac
 
 **Still needed / decisions open:**
 
-- **Business hours**, **favicon**, and **social share image** — still placeholders (items 2, 14, and the footer hours block).
+- **Favicon** and **social share image** — still placeholders (items 2 and 14). Business hours are now live (Mon–Fri, 9:00 am – 5:00 pm).
 
 Everything below is the full reference for swapping any image later.
 

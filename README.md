@@ -54,23 +54,25 @@ Until connected, submitting the form shows a clear "not connected yet — please
 
 Items awaiting client content are rendered as clean, visibly-labeled placeholders (dashed border + "Client input needed" tag) and marked in the source with a `<!-- CLIENT-INPUT: ... -->` comment. Search the project for `CLIENT-INPUT` to find the remaining ones.
 
-**Updated 21 Jul 2026** with the client's first feedback round — team bios + photos, the founder's story, and real care photos are now live. The `✅` rows below are done; the rest are still open.
+**Updated 23 Jul 2026** with the client's second feedback round — Lisa's name/title/photo, address reduced to "NJ" (map removed), new `info@` email, the real Privacy Policy, a bolded company name on the home page, and the logo recolored to light green + beige. The `✅` rows below are done; the rest are still open.
 
 | # | Item | Status | Where / how to finish |
 |---|---|---|---|
-| 1 | **Logo** | ✅ Done | Client's transparent logo icon is now in every header, paired with the text wordmark. Site keeps the green scheme for now per the client's note — see [IMAGE_GUIDE.md](IMAGE_GUIDE.md) "Current status" |
-| 2 | **Business hours** | ❌ Open | Footer of every page + Contact page — replace the hours placeholder with confirmed hours |
-| 3 | **Team members** | ✅ Done | `team.html` shows Lisa Annamaria Fuentes, Rajni Roy, and Chinasa Chudi-Attah with real bios + photos |
+| 1 | **Logo** | ✅ Done | Client's logo icon (recolored to light green + beige per feedback) is in every header, paired with the text wordmark — see [IMAGE_GUIDE.md](IMAGE_GUIDE.md) "Current status" |
+| 2 | **Business hours** | ❌ Open | Footer of every page + Contact page — replace the hours placeholder with confirmed hours (client said they'll send these) |
+| 3 | **Team members** | ✅ Done | `team.html` shows Lisa Fuentes, Rajni Roy, and Chinasa Chudi-Attah with real bios + photos |
 | 4 | **Gallery photos** | ✅ Done | `gallery.html` shows 4 real photos (team, chronic, palliative, home care) |
 | 5 | **Hero image** | ✅ Done | `index.html` uses the client's home-care photo |
 | 6 | **About intro image** | ✅ Done | `about.html` uses the team group photo |
-| 7 | **Home Care wording** | ❌ Open | `services.html`, service 3 — our draft; client may reword |
+| 7 | **Home Care wording** | ❌ Open | `services.html`, "Home Care Management" — our draft; client may reword |
 | 8 | **Founder's story** | ✅ Done | Added as the "Our Story" section on `about.html` from the client's text |
-| 9 | **Privacy Policy final copy** | ❌ Open | `privacy.html` — replace placeholder legal copy before launch, then remove the `noindex` meta tag |
+| 9 | **Privacy Policy** | ✅ Done | `privacy.html` now holds the client's supplied policy (effective 21 Jul 2026); page is indexable |
 | 10 | **OG share image** | ❌ Open | `<meta property="og:image">` on every page — IMAGE_GUIDE item 14 |
 | 11 | **WhatsApp button** | ❔ Open question | Not built; the content doc says to confirm with the client first |
 | 12 | **Favicon** | ❌ Open | `assets/favicon.svg` (placeholder leaf mark) — IMAGE_GUIDE item 2 |
 | 13 | **Team member 2 name** | ✅ Done | Confirmed as Rajni Roy, FNP |
+| 14 | **Address** | ✅ Done | Reduced to "NJ" / "New Jersey" site-wide per client; map + street address removed. Contact = phone + email |
+| 15 | **Contact email** | ✅ Done | Updated site-wide to `info@compassionatecaremgmnt.com` |
 
 ## Image replacement
 

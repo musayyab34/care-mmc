@@ -124,7 +124,7 @@
         status.innerHTML =
           "The contact form isn’t connected yet. Please call us at " +
           '<a href="tel:+17322002898">732-200-2898</a> or email ' +
-          '<a href="mailto:compassionatecaremgmnt@gmail.com">compassionatecaremgmnt@gmail.com</a>.';
+          '<a href="mailto:info@compassionatecaremgmnt.com">info@compassionatecaremgmnt.com</a>.';
         status.classList.add("is-error");
         return;
       }

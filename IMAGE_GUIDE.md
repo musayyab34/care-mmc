@@ -24,7 +24,7 @@ The client sent real photos, which are now live on the site (cropped to the exac
 | Team headshots 1–3 | Lisa, FNP partner, Chinasa | `1. Headshot`, `2. Image`, `3. Chinasa…` |
 | Gallery 1–4 | Team, chronic, palliative, home | images 4, 5, 6, 9 |
 
-**Logo — now placed.** The client supplied a transparent PNG (teal + gold heart-in-hands mark with the "Compassionate Care Management" wordmark). Because it's a tall vertical lockup, the *icon* was cropped out (`assets/images/logo-mark.png`) and paired with the site's text wordmark in the header — legible at nav size and unmodified in color. (The original full-lockup file is kept separately by the client, outside the repo.) The header now mixes the logo's teal with the site's forest-green wordmark; per the client's note we're keeping the green scheme for now, but if they'd prefer a fully teal/gold identity that's a quick follow-up. See item 1.
+**Logo — placed and recolored.** The client supplied a transparent PNG (heart-in-hands mark). Because it's a tall vertical lockup, the *icon* was cropped out (`assets/images/logo-mark.png`) and paired with the site's text wordmark in the header — legible at nav size. Per the client's second-round feedback ("light green and beige, it seems to have gone gold"), the icon was recolored from teal + gold to **light green + beige**, which now matches the site's green/cream palette. (The client keeps the original full lockup separately, outside the repo.) See item 1.
 
 **Still needed / decisions open:**
 

@@ -60,7 +60,7 @@ Items awaiting client content are rendered as clean, visibly-labeled placeholder
 |---|---|---|---|
 | 1 | **Logo** | ✅ Done | Client's logo icon (recolored to light green + beige per feedback) is in every header, paired with the text wordmark — see [IMAGE_GUIDE.md](IMAGE_GUIDE.md) "Current status" |
 | 2 | **Business hours** | ✅ Done | Monday – Friday, 9:00 am – 5:00 pm — footer of every page, Contact page, and the `openingHoursSpecification` in the home-page structured data |
-| 3 | **Team members** | ✅ Done | `team.html` shows Lisa Fuentes-Tidona, Rajni Roy, and Chinasa Chudi-Attah with confirmed titles, credentials, bios + photos |
+| 3 | **Team members** | ✅ Done | `team.html` shows Lisa Fuentes-Tidona, Rajni Roy, and Chinasa Chudi-Attah — all "Managing Partner", with confirmed titles, CHPN credentials, bios + photos |
 | 4 | **Gallery photos** | ✅ Done | `gallery.html` shows 4 real photos (team, chronic, palliative, home care) |
 | 5 | **Hero image** | ✅ Done | `index.html` uses the client's home-care photo |
 | 6 | **About intro image** | ✅ Done | `about.html` uses the team group photo |
@@ -73,6 +73,7 @@ Items awaiting client content are rendered as clean, visibly-labeled placeholder
 | 13 | **Team member 2 name** | ✅ Done | Confirmed as Rajni Roy, FNP |
 | 14 | **Address** | ✅ Done | Reduced to "NJ" / "New Jersey" site-wide per client; map + street address removed. Contact = phone + email |
 | 15 | **Contact email** | ✅ Done | Updated site-wide to `info@compassionatecaremgmnt.com` |
+| 16 | **"How It Works" section** | ✅ Done | Added to `index.html` between Services Overview and Why Choose Us — 4 steps (Call us → We listen → We build your care plan → We coordinate your care) |
 
 ## Image replacement
 

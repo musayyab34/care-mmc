@@ -22,7 +22,7 @@ The client sent real photos, which are now live on the site (cropped to the exac
 | Home hero | Home-care scene | `9. This reflects Home Care Management.jpeg` |
 | About intro | Team group photo | `4. …profession group photo…` |
 | Team headshots 1–3 | Lisa, FNP partner, Chinasa | `1. Headshot`, `2. Image`, `3. Chinasa…` |
-| Gallery 1–4 | Team, chronic, palliative, home | images 4, 5, 6, 9 |
+| Gallery 1–3 | Chronic, palliative, home care | images 5, 6, 9 |
 
 **Logo — placed and recolored.** The client supplied a transparent PNG (heart-in-hands mark). Because it's a tall vertical lockup, the *icon* was cropped out (`assets/images/logo-mark.png`) and paired with the site's text wordmark in the header — legible at nav size. Per the client's second-round feedback ("light green and beige, it seems to have gone gold"), the icon was recolored from teal + gold to **light green + beige**, which now matches the site's green/cream palette. (The client keeps the original full lockup separately, outside the repo.) See item 1.
 
@@ -84,15 +84,15 @@ Everything below is the full reference for swapping any image later.
 | **Format / max size** | JPG ≤ 120 KB each |
 | **Framing notes** | Head-and-shoulders, face centered, eyes in the upper third, small headroom. Shoot everyone against the same or similar background with the same crop so the grid looks consistent. Warm, friendly expressions. |
 
-## 8–13. Gallery photos (×6 tiles)
+## 8–10. Gallery photos (×3 tiles)
 
 | | |
 |---|---|
-| **What / where** | Photo grid on **Gallery** — tiles are labeled by suggested category |
-| **Drop-in paths** | `assets/images/gallery-1.jpg` … `gallery-6.jpg` |
+| **What / where** | Photo grid on **Gallery** — currently 1: chronic care management, 2: palliative care, 3: home care management |
+| **Drop-in paths** | `assets/images/gallery-1.jpg`, `gallery-2.jpg`, `gallery-3.jpg` |
 | **Dimensions** | 1200 × 900 px, **4:3 landscape** each |
 | **Format / max size** | JPG ≤ 200 KB each |
-| **Framing notes** | Suggested categories per tile: 1 — the team; 2 — care in action (with the patient's permission); 3 — office/workspace or calm setting; 4 — community involvement or partner facilities; 5 — brand/logo graphic with taglines; 6 — any additional photo. Center the subject; each tile also opens enlarged in a lightbox, so use sharp, full-resolution files. Update each tile's caption text and `alt` attribute in `gallery.html` to describe the real photo. |
+| **Framing notes** | Center the subject; each tile also opens enlarged in a lightbox, so use sharp, full-resolution files. Update each tile's caption text and `alt` attribute in `gallery.html` to describe the real photo. **To add more tiles**, duplicate a `<button class="gallery-item">` block in `gallery.html` and drop in `gallery-4.jpg`, etc. Note: the client asked that the team group photo *not* appear here — it already features on About and the Team page. |
 
 ## 14. Social share image (Open Graph)
 

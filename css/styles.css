@@ -937,7 +937,9 @@ a.card:hover .card-more {
 .gallery-grid {
   display: grid;
   gap: var(--sp-3);
-  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  max-width: 56rem;
+  margin-inline: auto;
 }
 
 .gallery-item {
